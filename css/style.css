@@ -11,14 +11,14 @@ button,a{
 .fondo-nav{
     background-color: white;
     max-width: 100%;
-    height: 50px;
+    height: 70px;
 }
 .nav{
     background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
@@ -30,25 +30,44 @@ button,a{
     padding: 10px 10px;
     border: none;
     margin-right: 5%;
-
+    font-size: 18px;
+}
+.btn-nav:hover{
+    transform: scale(0.9);
+    color: white;
+    box-shadow: 0 3px 5px gray;
 }
 .icon-nav{
     color: #FCBF83;
-    font-size: 25px;
+    font-size: 35px;
 }
 .titulo-nav{
     color: #FCBF83;
-    font-size: 20px;
+    font-size: 35px;
     margin-left: 5%;
+}
+.enlaces-nav{
+    display: flex;
+    gap: 15px;
 }
 .enlaces-nav a{
     text-decoration: none;
-    margin: 0 7px;
+    font-size: 20px;
     color: black;
+    padding: 3px 5px;
+
+}
+.enlaces-nav a:hover{
+    background-color: #FCBF83;
+    border-radius: 20px;
+    padding: 3px 5px;
+
+    
 }
 .img{
     width: 100%;
     height: 650px;
+    
     background:
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url("/img/img-fondo1.png");
@@ -58,8 +77,9 @@ button,a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    margin-bottom: 1000px;
+}
+.img p,.img h2{
+    margin-left: 50px;
 }
 .img .p-1{
     background-color: #FCBF83;
@@ -89,6 +109,7 @@ button,a{
     margin-top: 50px;
     display: flex;
     gap: 70px;
+    margin-left: 50px;
 }
 .img button{
     display: inline;
@@ -99,8 +120,51 @@ button,a{
     padding: 20px 20px;
     font-size: 15px;
 }
+.img button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 2px white;
+}
 .img .btn-2{
     background-color: white;
 }
-
+footer{
+    width: 100%;
+    height: 337px;
+    background-color: #020617;
+}
+.cont-principal .cont-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .cont-principal{
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+.cont-logo{
+    width: 25%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cont-logo span{
+    color: #FCBF83;
+    font-size: 30px;
+    align-self: center;
+}
+.cont-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cont-redes{
+    margin-right: 100px;
+}
 
