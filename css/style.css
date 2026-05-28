@@ -5,8 +5,14 @@
 body{
     background-color: gray;
 }
+hr{
+    border: none;
+    height: 1px;
+    background-color: #1E293B;
+}
 button,a{
     cursor: pointer;
+    text-decoration: none;
 }
 .fondo-nav{
     background-color: white;
@@ -129,7 +135,7 @@ button,a{
 }
 footer{
     width: 100%;
-    height: 337px;
+    height: 250px;
     background-color: #020617;
 }
 .cont-principal .cont-nav{
@@ -137,6 +143,10 @@ footer{
     align-items: center;
     flex-direction: column;
     align-items: flex-start;
+    gap: 5px;
+}
+.cont-nav a{
+    color: white;
 }
 footer .cont-principal{
     width: 100%;
@@ -154,6 +164,9 @@ footer .cont-principal{
     flex-direction: column;
     gap: 5px;
 }
+.cont-logo p, .cont-nav a, .cont-contacto span{
+    color: #94A3B8;
+}
 .cont-logo span{
     color: #FCBF83;
     font-size: 30px;
@@ -166,5 +179,26 @@ footer .cont-principal{
 }
 .cont-redes{
     margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+.cont-redes span a{
+    margin-right: 10px;
+}
+.icon-redes{
+    color: white;
+}
+.cont-derechAutor{
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 
+}
+.cont-derechAutor span{
+    margin: 20px 30px;
+    font-size: 12px;
+    color: #94A3B8;
+}
