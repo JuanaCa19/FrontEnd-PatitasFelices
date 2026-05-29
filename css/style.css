@@ -231,6 +231,7 @@ footer .cont-principal{
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 40px;
+    padding-bottom: 50px;
 }
 .tarjeta{
     display: flex;
@@ -272,8 +273,13 @@ footer .cont-principal{
     height: 570px;
 }
 .cont-imgs{
+    width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 .cont-carrusel .img-4{
     width: 275px;
@@ -281,14 +287,29 @@ footer .cont-principal{
     background-image: url("/img/img-dog4.png");
     border-radius: 10px;
 }
-
+.cont-carrusel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+}
+.cont-carrusel h2{
+    font-size: 46px;
+}
+.cont-carrusel p{
+    font-size: 28px;
+    color: #565D6DFF;
+}
 .cont-carrusel .img-1{
     width: 275px;
     height: 570px;
     background-image: url("/img/img-dog1.jpg");
-    background-repeat: no-repeat;
+
     background-position: center;
-    background-repeat: no-repeat;
+  
     border-radius: 10px;
 }
 .cont-carrusel .img-2{
