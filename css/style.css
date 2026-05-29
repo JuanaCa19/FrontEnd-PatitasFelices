@@ -133,6 +133,9 @@ button,a{
 .img .btn-2{
     background-color: white;
 }
+.img .btn-2:hover{
+    box-shadow: 0 4px 2px #FCBF83;
+}
 footer{
     width: 100%;
     height: 250px;
@@ -202,3 +205,103 @@ footer .cont-principal{
     font-size: 12px;
     color: #94A3B8;
 }
+.cont-destacadas{
+    background-color: white;
+}
+.cont-destacadas .titulo-principal,.cont-destacadas .parrafo-principal{
+    text-align: center;
+    padding-top: 50px;
+}
+.cont-destacadas .titulo-principal{
+    font-size: 46px;
+}
+.cont-destacadas .parrafo-principal{
+    width: 718px;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 28px; 
+    color: #565D6DFF;
+}
+.cont-tarjetas{
+    margin-top: 100px;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    padding:0 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+    row-gap: 30px;
+}
+.tarjeta h2{
+    font-size: 30px;
+}
+.tarjeta p{
+    font-size: 20px;
+    color: #565D6DFF;
+}
+.tarjeta span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #FFF7F0FF;
+}
+
+.tarjeta span i{
+    font-size: 40px;
+}
+.cont-img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 570px;
+}
+.cont-imgs{
+    display: flex;
+    flex-direction: row;
+}
+.cont-carrusel .img-4{
+    width: 275px;
+    height: 570px;
+    background-image: url("/img/img-dog4.png");
+    border-radius: 10px;
+}
+
+.cont-carrusel .img-1{
+    width: 275px;
+    height: 570px;
+    background-image: url("/img/img-dog1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.cont-carrusel .img-2{
+    width: 275px;
+    height: 275px;
+    background-image: url("/img/img-dog.png");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.cont-carrusel .img-3{
+    width: 275px;
+    height: 275px;
+    background-image: url("/img/img-dog2.png");
+    border-radius: 10px;
+}
+
