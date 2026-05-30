@@ -138,7 +138,7 @@ button,a{
 }
 footer{
     width: 100%;
-    height: 250px;
+    min-height: 250px;
     background-color: #020617;
 }
 .cont-principal .cont-nav{
@@ -153,7 +153,7 @@ footer{
 }
 footer .cont-principal{
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -199,6 +199,7 @@ footer .cont-principal{
     color: white;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .cont-derechAutor span{
@@ -217,7 +218,7 @@ footer .cont-principal{
     font-size: 46px;
 }
 .cont-destacadas .parrafo-principal{
-    width: 718px;
+    max-width: 718px;
     margin: 0 auto;
     font-size: 28px;
     line-height: 28px; 
@@ -344,6 +345,7 @@ footer .cont-principal{
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .cont-tarjeta-test{
