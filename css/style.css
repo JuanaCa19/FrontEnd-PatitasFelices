@@ -245,6 +245,10 @@ footer .cont-principal{
     border-radius: 15px;
     box-shadow: 2px 2px 10px black;
     row-gap: 30px;
+    
+}
+.tarjeta:hover{
+    transform: scale(0.95);
 }
 .tarjeta h2{
     font-size: 30px;
@@ -285,6 +289,9 @@ footer .cont-principal{
     width: 275px;
     height: 570px;
     background-image: url("/img/img-dog4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 10px;
 }
 .cont-carrusel{
@@ -297,6 +304,7 @@ footer .cont-principal{
     padding-bottom: 50px;
 }
 .cont-carrusel h2{
+    padding-top: 30px;
     font-size: 46px;
 }
 .cont-carrusel p{
@@ -307,22 +315,34 @@ footer .cont-principal{
     width: 275px;
     height: 570px;
     background-image: url("/img/img-dog1.jpg");
-
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-  
     border-radius: 10px;
 }
 .cont-carrusel .img-2{
     width: 275px;
     height: 275px;
-    background-image: url("/img/img-dog.png");
+    animation: carrusel-img2 5s linear infinite;
+    animation-direction: alternate;
     background-repeat: no-repeat;
     border-radius: 10px;
 }
 .cont-carrusel .img-3{
     width: 275px;
     height: 275px;
-    background-image: url("/img/img-dog2.png");
+    animation: carrusel-img3 5s linear infinite;
+    animation-direction: alternate;
+    background-repeat: no-repeat;
     border-radius: 10px;
 }
+@keyframes carrusel-img2 {
+    0%{background-image: url("/img/img-dog.png");}
+    100%{background-image: url("/img/visily-image.png");}
+}
+@keyframes carrusel-img3 {
+    0%{background-image: url("/img/img-dog2.png");}
+    100%{background-image: url("/img/img-dog-3-2.png");}
+}
+
 
