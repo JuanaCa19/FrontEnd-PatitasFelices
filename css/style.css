@@ -387,6 +387,47 @@ footer .cont-principal{
 .cont-persona p{
     font-size: 15px;
 }
+.cont-mision-vision{
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.cont-mision-vision .cont-contenido{
+    width: 550px;
+}
+.cont-mision-vision .cont-contenido h2{
+    font-size: 48px;
+}
+.cont-mision-vision .cont-contenido span h3{
+    display: inline;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.cont-mision-vision .cont-contenido p{
+    max-width: 450px;
+    padding-left: 38px;
+    color: #565D6D;
+    font-size: 18px;
+}
+.cont-img-principal{
+    width: 525px;
+    height: 465px;
+    background-image: url("/img/img-mision.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+
+}
+.check-circle{
+    color: #FCBF83;
+}
+.cont-mision-vision .cont-contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 @keyframes carrusel-img2 {
     0%{background-image: url("/img/img-dog.png");}
     100%{background-image: url("/img/visily-image.png");}
