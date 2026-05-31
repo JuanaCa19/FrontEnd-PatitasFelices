@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: white
 }
 
 hr {
@@ -21,20 +21,28 @@ a {
 
 .fondo-nav {
     background-color: white;
-    max-width: 100%;
     height: 70px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
 }
 
 .nav {
-    background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
+
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 70px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 15px;
-    z-index: 100;
 }
 
 .btn-nav {
@@ -161,7 +169,6 @@ a {
 
 footer {
     width: 100%;
-    min-height: 250px;
     background-color: #020617;
 }
 
@@ -179,13 +186,10 @@ footer {
 
 footer .cont-principal {
     width: 100%;
-    min-height: 200px;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    flex-wrap: wrap;
-
 }
 
 .cont-logo {
@@ -556,33 +560,49 @@ footer .cont-principal {
         font-size: 4vw;
     }
 
-    .nav,
-    .fondo-nav {
+    header {
+        position: static;
+    }
+
+    .btn-nav {
         display: none;
     }
 
-    .nav-cel {
+    .nav {
         position: fixed;
         display: flex;
         bottom: 0;
         width: 100%;
-        max-width: 100vw;
         background-color: white;
         height: 70px;
         justify-content: space-around;
         align-items: center;
         z-index: 100;
     }
+    .fondo-nav-cel{
+        width: 100%;
+        height: 70px;
+    }
+    .fondo-nav {
+        display: none;
+    }
 
-    .nav-cel h3 {
-        font-size: 15px;
+    header {
+        height: 7vh;
+    }
+
+    .titulo-nav,
+    .icon-nav {
+        font-size: 7vw;
+    }
+
+    header {
+        align-self: center;
     }
 
     .tarjeta {
         width: 70vw;
         height: 40vh;
-        row-gap: 30px;
-
     }
 
     .img-1,
@@ -600,10 +620,65 @@ footer .cont-principal {
     .img button {
         width: 30vw;
         font-size: 3vw;
-        border-radius: 50px;
         padding: 3vw 2vh;
     }
 
+    .cont-destacadas .titulo-principal {
+        font-size: 10vw;
+    }
+
+    .cont-destacadas .parrafo-principal {
+        width: 90vw;
+        margin: 0 auto;
+        font-size: 5vw;
+        line-height: 3vh;
+    }
+
+    .cont-carrusel h2 {
+        font-size: 10vw;
+    }
+
+    .cont-carrusel p {
+        font-size: 5vw;
+    }
+
+    footer {
+    }
+
+    footer .cont-principal {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 650px;
+        gap: 50px;
+    }
+
+    .cont-logo {
+        width: 100%;
+    }
+
+    .cont-logo p {
+        text-align: center;
+    }
+
+    .cont-nav,
+    .cont-contacto,
+    .cont-redes {
+        align-self: flex-start;
+        margin-left: 2vw;
+        gap: 15px;
+    }
+
+    .cont-derechAutor {
+        margin-top: 5px;
+        justify-content: center;
+        height: 55px;
+    }
+
+    .cont-derechAutor span {
+        margin: 0;
+    }
 }
 
 @keyframes carrusel-img2 {
