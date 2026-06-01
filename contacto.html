@@ -44,8 +44,87 @@
                 <a href=""><button class="btn-2">Conócenos</button></a>
             </div>
         </div>
-        <section class="cont-contacto" id="perfil">
-            
+        <section class="cont-contacto">
+
+            <div class="contacto-info">
+
+                <h2>Hablemos</h2>
+                <p class="contacto-descripcion">¿Tienes dudas sobre el proceso de adopción o quieres ser voluntario?
+                    Escríbenos.</p>
+
+                <div class="contacto-datos">
+
+                    <span class="contacto-item">
+                        <span class="contacto-icono"><i class="bi bi-envelope"></i></span>
+                        <p>info@patitasfelices.org</p>
+                    </span>
+
+                    <span class="contacto-item">
+                        <span class="contacto-icono"><i class="bi bi-telephone"></i></span>
+                        <p>+57 311 123 5678</p>
+                    </span>
+
+                    <span class="contacto-item">
+                        <span class="contacto-icono"><i class="bi bi-geo-alt"></i></span>
+                        <p>Cucúta, Colombia</p>
+                    </span>
+
+                </div>
+
+                <div class="contacto-redes">
+
+                    <a href="#"><i class="bi bi-facebook icon-redes"></i></a>
+                    <a href="#"><i class="bi bi-instagram icon-redes"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x icon-redes"></i></a>
+
+                </div>
+
+            </div>
+            <div class="contacto-formulario">
+                <form class="formulario">
+                    <div class="form-fila">
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ej. Perez" required>
+                        </div>
+                    </div>
+                    <div class="form-fila">
+                        <div class="form-grupo">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" name="ciudad" placeholder="Ej. Bogotá" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="juan@correo.com" required>
+                        </div>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="consulta">Tipo de Consulta</label>
+                        <select name="consulta" id="consulta" required>
+                            <option selected disabled>
+                                Selecciona el tipo de consulta
+                            </option>
+                            <option>Adopción</option>
+                            <option>Donación</option>
+                            <option>Voluntariado</option>
+                            <option>Información general</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="mensaje">¿En qué podemos ayudarte?</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Cuéntanos un poco sobre ti o tus dudas..."
+                            required></textarea>
+                    </div>
+
+                </form>
+                <button>Enviar mensaje</button>
+                <p>Te responderemos en un plazo máximo de 24 horas hábiles.</p>
+            </div>
         </section>
     </main>
     <footer>
@@ -69,7 +148,7 @@
                 <a href="">Blog de mascotas</a>
             </div>
 
-            <div class="cont-contacto">
+            <div class="cont-contacto-footer">
                 <h2>Contacto</h2>
                 <span><i class="bi bi-envelope-fill icon-redes"></i>
                     info@patitasfelices.org</span>

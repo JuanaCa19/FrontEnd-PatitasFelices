@@ -208,7 +208,7 @@ footer .cont-principal {
 
 .cont-logo p,
 .cont-nav a,
-.cont-contacto span {
+.cont-contacto-footer span {
     color: #94A3B8;
 }
 
@@ -218,7 +218,13 @@ footer .cont-principal {
     align-self: center;
 }
 
-.cont-contacto {
+.cont-contacto-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cont-contacto-footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -795,6 +801,137 @@ button.tarjeta-adop {
     color: red;
 }
 
+.cont-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+
+.contacto-info {
+    background-color: #020617;
+    min-width: 280px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    row-gap: 30px;
+    border-radius: 15px 0 0 15px;
+}
+
+.contacto-info h2 {
+    color: white;
+    font-size: 46px;
+    margin: 30px 0 0 30px;
+}
+
+.contacto-info .contacto-descripcion {
+    color: #94A3B8;
+    font-size: 16px;
+    width: 70%;
+}
+
+.contacto-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacto-item {
+    display: flex;
+    gap: 10px;
+}
+
+.contacto-item p {
+    color: white;
+}
+
+.contacto-icono i {
+    font-size: 15px;
+    color: #FCBF83;
+}
+
+.contacto-icono {
+    width: 30px;
+    height: 30px;
+    background-color: #272F40;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-redes {
+    display: flex;
+    gap: 30px;
+}
+
+.contacto-formulario {
+    background-color: whitesmoke;
+    min-width: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+}
+
+.contacto-formulario button {
+    width: 90%;
+    background-color: #FCBF83;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.contacto-formulario p {
+    color: #565D6D;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.formulario {
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+input,
+textarea,
+select {
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px 10px;
+}
+
+.form-fila {
+    display: flex;
+    gap: 35px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    height: 50px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #FCBF83;
+}
+
 @media(width < 1168px) {
     .info-perfil {
         align-items: center;
@@ -803,9 +940,11 @@ button.tarjeta-adop {
     .perfil-acciones button {
         width: 90%;
     }
-    .perfil-historia h3{
+
+    .perfil-historia h3 {
         text-align: center;
     }
+
     .perfil-historia h3,
     .perfil-historia p {
         padding-left: 0;
@@ -816,7 +955,7 @@ button.tarjeta-adop {
         margin: 0 auto;
     }
 
-   
+
 
 }
 
@@ -966,7 +1105,7 @@ button.tarjeta-adop {
     }
 
     .cont-nav,
-    .cont-contacto,
+    .cont-contacto-footer,
     .cont-redes {
         align-self: flex-start;
         margin-left: 5vw;
@@ -1042,24 +1181,60 @@ button.tarjeta-adop {
     .perfil-acciones button {
         width: 90%;
     }
+
     .perfil-historia p {
         font-size: 4vw
     }
-    .perfil-historia h3{
+
+    .perfil-historia h3 {
         font-size: 5vw;
     }
-    .perfil-ubicacion,.perfil-caracteristicas{
+
+    .perfil-ubicacion,
+    .perfil-caracteristicas {
         font-size: 4vw;
-}
-.info-perfil h2{
-    font-size: 10vw;
-}
-.stat-item p{
-    font-size: 3.5vw;
-}
-.stat-item h4{
-    font-size: 4.5vw;
-}
+    }
+
+    .info-perfil h2 {
+        font-size: 10vw;
+    }
+
+    .stat-item p {
+        font-size: 3.5vw;
+    }
+
+    .stat-item h4 {
+        font-size: 4.5vw;
+    }
+
+    .contacto-info {
+        display: none;
+    }
+
+    .form-fila {
+        flex-direction: column;
+    }
+
+    .contacto-formulario {
+        min-width: 0;
+        width: 90vw;
+        border-radius: 15px;
+    }
+
+    .formulario {
+        width: 80vw;
+        margin-top: 20px;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 70vw;
+    }
+
+    .contacto-formulario button {
+        width: 80vw;
+    }
 }
 
 @keyframes carrusel-img2 {
