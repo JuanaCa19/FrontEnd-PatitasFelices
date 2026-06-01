@@ -598,14 +598,19 @@ footer .cont-principal {
 .img-adop-8{
     background-image: url("/img/adopcion/img-adop-8.png");
 }
+.tarjeta-animal a{
+   align-self: center;
+    width: 70%;
+}
 .tarjeta-animal button{
     background-color: #FCBF83;
-    width: 70%;
+    width: 100%;
     border: none;
     border-radius: 15px;
     padding: 10px 10px;
-    align-self: center;
+    
 }
+
 .tarjeta-animal span{
     display: flex;
     align-items: center;
@@ -635,6 +640,110 @@ button.tarjeta-adop{
     font-size: 28px;
     text-align: center;
     color: #565D6DFF;
+}
+.cont-perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+.img-perfil{
+    width: 584px;
+    height: 599px;
+    background-image: url("/img/perfil/img-perfil.png");
+    border-top-left-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.perfil-ubicacion p{
+    display: inline;
+}
+.perfil-ubicacion-p-1{
+    background-color: #E0FBE4;
+    color: #63E979;
+    padding: 3px 15px;
+    border-radius: 15px;
+}
+.perfil-ubicacion-p-2{
+    color: #565D6D;
+}
+.cont-perfil h2{
+    margin-top: 15px;
+    font-size: 46px;
+}
+.perfil-caracteristicas{
+    margin-top: 10px;
+    color: #565D6D;
+    font-size: 20px;
+}
+.info-perfil{
+    background-color: whitesmoke;
+    padding: 0 50px;
+    width: 584px;
+    height: 599px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.perfil-historia{
+    margin-top: 70px;
+}
+.perfil-historia h3,.perfil-historia p{
+    padding-left: 15px;
+}
+.perfil-historia h3 i{
+    color: #FCBF83;
+}
+.perfil-historia p{
+    color: #565D6D;
+    width: 80%;
+}
+.perfil-stats{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.stat-item{
+    text-align: center;
+}
+.stat-item p{
+    font-size: 13px;
+    color: #565D6D;
+}
+.stat-item h4{
+    font-size: 20px;
+
+}
+.perfil-acciones{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.perfil-acciones i{
+    font-size: 30px;
+
+}
+.perfil-acciones button{
+    background-color: #FCBF83;
+    width: 70%;
+    padding: 15px 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.perfil-acciones button:hover{
+    transform: scale(0.95);
+    color: white;
+}
+.perfil-acciones i:active{
+    color: red;
 }
 @media (max-width: 600px) {
 
@@ -724,7 +833,6 @@ button.tarjeta-adop{
 
     .tarjeta {
         width: 70vw;
-        height: 40vh;
     }
 
     .img-1,
@@ -764,7 +872,6 @@ button.tarjeta-adop{
         font-size: 5vw;
     }
 
-    footer {}
 
     footer .cont-principal {
         width: 100%;
@@ -787,7 +894,7 @@ button.tarjeta-adop{
     .cont-contacto,
     .cont-redes {
         align-self: flex-start;
-        margin-left: 2vw;
+        margin-left: 5vw;
         gap: 15px;
     }
 
