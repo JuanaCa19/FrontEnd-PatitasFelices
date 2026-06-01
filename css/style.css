@@ -80,7 +80,9 @@ header {
     display: flex;
     gap: 15px;
 }
-
+.enlaces-nav i{
+    display: none;
+}
 .enlaces-nav a {
     text-decoration: none;
     font-size: 20px;
@@ -1239,6 +1241,15 @@ select:focus {
 
     .contacto-formulario button {
         width: 80vw;
+    }
+    .enlaces-nav i{
+        display: block;
+    }
+    .enlaces-nav span{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
