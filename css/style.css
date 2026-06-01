@@ -33,6 +33,7 @@ header {
     align-items: center;
     position: fixed;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .nav {
@@ -521,7 +522,7 @@ footer .cont-principal {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 20px;
 }
@@ -531,16 +532,25 @@ footer .cont-principal {
     width: 90vw;
     grid-template-columns: repeat(
         auto-fill, 
-        minmax(250px,1fr)
+        minmax(250px,300px)
         );
-    gap: 10px 10px;
-
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 .tarjeta-animal{
-    background-color: gray;
+    background-color: white;
     width: 100%;
-    height: 500px;
+    height: 420px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 2px 10px black; 
+}
+.tarjeta-animal:hover{
+    transform: scale(0.95);
 }
 .img-adop{
     height: 250px;
@@ -550,6 +560,19 @@ footer .cont-principal {
     background-repeat: no-repeat;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+}
+.img-adop p{
+    position: relative;
+    width: 100px;
+    top: 10px;
+    left: 10px;
+    background-color: #63E979;
+    border-radius: 10px;
+    padding: 3px 7px;
+    text-align: center;
+}
+.img-adop-3 p,.img-adop-7 p{
+    background-color: #F3F4F6;
 }
 .img-adop-1{
     background-image: url("/img/adopcion/img-adop-1.png");
@@ -574,6 +597,44 @@ footer .cont-principal {
 }
 .img-adop-8{
     background-image: url("/img/adopcion/img-adop-8.png");
+}
+.tarjeta-animal button{
+    background-color: #FCBF83;
+    width: 70%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 10px;
+    align-self: center;
+}
+.tarjeta-animal span{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 8%;
+}
+.tarjeta-titulo p{
+    color: #FCBF83;
+    padding-right: 12%;
+}
+.tarjeta-titulo{
+    display: flex;
+    justify-content: space-between;
+}
+.tarjeta-descripcion p{
+    color: #565D6D;
+}
+button.tarjeta-adop{
+    color: #565D6D;
+    background-color: white;
+}
+.cont-adopcion > h2:first-of-type{
+    font-size: 46px;
+    text-align: center;
+}
+.cont-adopcion > p:first-of-type{
+    font-size: 28px;
+    text-align: center;
+    color: #565D6DFF;
 }
 @media (max-width: 600px) {
 
