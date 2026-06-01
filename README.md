@@ -26,10 +26,9 @@ Este proyecto es una maqueta frontend construida con **HTML5 y CSS3 nativo** (si
 
 ### Características destacadas
 
-- Diseño **responsive** con 3 breakpoints (600px, 768px, 1168px)
+- Diseño **responsive** con 2 breakpoints (600px, 1168px)
 - Carrusel de imágenes animado con `@keyframes` sin JavaScript
 - Navegación inferior en móvil
-- Validación visual de formulario con pseudoclases CSS (`:valid`, `:invalid`, `:focus`)
 - Estados visuales diferenciados: animales disponibles vs adoptados
 
 ---
