@@ -96,5 +96,5 @@ FrontEnd-PatitasFelices/
 
 ## 👨‍💻 Desarrollado por
 
-**PetLover Devs**  
+**Juan Cardenas**  
 Proyecto académico — 2026
